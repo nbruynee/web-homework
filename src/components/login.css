@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;   
+    height: 100vh;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: #F8F9FA;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    /* padding: 20px; */
+}
+
+.login-form .logo {
+    display: flex;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    mix-blend-mode: multiply;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    width: 85%;
+}
+
+.input-form .username, 
+.input-form .password {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 85%;
+    /* height: 75px; */
+    margin-bottom: 10px;
+}
+
+.user-input, .pwd-input {
+    border: 1px solid #E9ECEF;
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+}
+
+.span-15 {
+    padding-bottom: 5px;
+}
+
+.password img {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+    width: 85%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    color: #E73F3F;
+    text-decoration: underline;
+}
+
+.submit-btn {
+    background-color: #FF9138;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    width: 20%;
+    cursor: pointer;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    background-color: #ffffff;
+    padding-left: 170px;
+}
+
+.image-section .bg-login {
+    width: 60%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%);
+    color: #FF7506;
+}
+
+.text-overlay .text-1 {
+    font-size: 28px;
+}
+
+.text-overlay .text-2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    font-family: "Nunito", sans-serif;
+}
