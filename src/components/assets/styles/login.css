@@ -120,7 +120,7 @@ html, body {
 }
 
 .image-section .bg-login {
-    width: 60%;
+    width: 75%;
     aspect-ratio: 1/1;
     object-fit: contain;
 }
@@ -128,7 +128,7 @@ html, body {
 .text-overlay {
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 72%;
     transform: translateY(-50%);
     color: #FF7506;
 }
