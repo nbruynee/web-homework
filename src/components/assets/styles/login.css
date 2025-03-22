@@ -27,11 +27,10 @@ html, body {
 
 .login-form .logo {
     display: flex;
-    /* padding-top: 40px;
-    padding-bottom: 40px; */
     margin-top: 20px;
     margin-bottom: 40px;
     mix-blend-mode: multiply;
+    cursor: pointer;
 }
 
 .logo img {
