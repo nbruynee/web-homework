@@ -14,15 +14,21 @@ html, body {
     height: 100vh;
 }
 
-.login-form {
+.login-form-container {
     display: flex;
-    flex-direction: column;
     width: 40%;
     background-color: #F8F9FA;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 40px;
+    justify-content: center;
+    padding-top: 20px;
     /* padding: 20px; */
+}
+
+.login-form-container .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
 }
 
 .login-form .logo {
@@ -34,18 +40,17 @@ html, body {
 }
 
 .logo img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     object-fit: contain;
 }
 
 .input-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* padding-left: 20px;
-    padding-right: 20px; */
-    width: 85%;
+    width: 100%;
+    margin-bottom: 12px;
+    gap: 10px;
 }
 
 .input-form .username, 
@@ -54,9 +59,6 @@ html, body {
     display: flex;
     flex-direction: column;
     font-size: 14px;
-    width: 85%;
-    /* height: 75px; */
-    margin-bottom: 10px;
 }
 
 .user-input, .pwd-input {
@@ -67,27 +69,31 @@ html, body {
 }
 
 .span-15 {
+    line-height: 25px;
     padding-bottom: 5px;
 }
 
-.password img {
+.password .hide-pwd {
     position: absolute;
     right: 10px;
-    top: 70%;
+    top: 76%;
+    right: 12px;
     transform: translateY(-50%);
-    width: 16px;
-    height: 15px;
     cursor: pointer;
+}
+
+.hide-pwd svg {
+    width: 17px;
+    height: 17px;
+    color: #6c757d;
 }
 
 .forgot-password {
     display: flex;
     justify-content: flex-start;
     font-size: 14px;
-    width: 85%;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 22px;
     cursor: pointer;
 }
 
@@ -96,16 +102,22 @@ html, body {
     text-decoration: underline;
 }
 
-.submit-btn {
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    height: 40px;
+}
+
+.btn-container .submit-btn {
     background-color: #FF9138;
     color: #ffffff;
-    font-size: 12px;
-    text-align: center;
+    font-size: 13px;
     font-weight: 600;
+    line-height: 33px;
     border: none;
     border-radius: 6px;
-    padding: 10px 20px;
-    width: 20%;
+    width: 100%;
     cursor: pointer;
 }
 

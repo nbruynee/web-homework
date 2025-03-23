@@ -8,7 +8,7 @@ import ChangePassword from './components/changePassword';
 function App() {
   return (
     <>
-      <ChangePassword/>
+      <Login/>
     </>
   );
 }
